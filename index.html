@@ -1,0 +1,1213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>StartupExpo 2025</title>
+
+    <link rel="icon" href="./img/startup_expo_logo.png" type="image/png" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.3.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@latest/css/boxicons.min.css"
+    />
+    <link rel="stylesheet" href="https://unpkg.com/sheryjs/dist/Shery.css" />
+
+    <link rel="stylesheet" href="./style.css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body>
+    <div id="introAnimation">
+      <div id="surpriseBox" class="rounded-xl"></div>
+      <canvas id="cosmicCanvas"></canvas>
+    </div>
+
+    <div id="mainContent" style="opacity: 0; visibility: hidden">
+      <nav>
+        <a href="#" class="logo">
+          <img src="./img/startupLogo.png" alt="" /><span>&nbsp;</span>
+        </a>
+        <ul class="navbar">
+          <li><a href="#heroBg">Home</a></li>
+          <li><a href="#aboutSection">About</a></li>
+          <li><a href="#carousel">Event Highlights</a></li>
+          <li><a href="#speakerSection">Speakers</a></li>
+          <li><a href="#wadhwanisection">Wadhwani Foundation</a></li>
+          <li><a href="#FAQ">FAQ</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="nav-right">
+          <img src="./img/ECELL-LOGO.png" alt="" height="65" width="65" />
+          <img src="./img/mitLogo.png" alt="" height="65" width="65" />&nbsp;
+          <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+      </nav>
+      <div class="Bg-image"><img src="./img/landingpg.jpg" id="heroBg" /></div>
+      <main class="landing-section">
+        <div class="heading-container">
+          <h1>
+            <span class="startup">Startup</span><br />
+            <span class="expo">Expo</span>
+          </h1>
+          <p class="tagline">Where Ideas Ignite & Futures are Built</p>
+        </div>
+
+        <div class="quote-grid">
+          <p>
+            “The best way to predict the future is to create it.”
+            <span>– Peter Drucker</span>
+          </p>
+          <p>
+            “All our dreams can come true, if we have the courage to pursue
+            them.”
+            <span>– Walt Disney</span>
+          </p>
+          <p>
+            “It’s not about ideas. It’s about making ideas happen.”
+            <span>– Scott Belsky</span>
+          </p>
+          <p>
+            “Chase the vision, not the money. The money will end up following
+            you.”
+            <span>– Tony Hsieh</span>
+          </p>
+        </div>
+
+        <div class="ripple-container">
+          <div id="nexusCore"></div>
+          <div id="nexusRipple"></div>
+        </div>
+      </main>
+
+      <section class="countdownSection">
+        <h3>Countdown to Expo</h3>
+        <div class="countdown" id="countdown">
+          <div>
+            <span id="days">00</span>
+            <p>Days</p>
+          </div>
+          <div>
+            <span id="hours">00</span>
+            <p>Hours</p>
+          </div>
+          <div>
+            <span id="minutes">00</span>
+            <p>Minutes</p>
+          </div>
+          <div>
+            <span id="seconds">00</span>
+            <p>Seconds</p>
+          </div>
+        </div>
+      </section>
+      <div class="eventInfoContainer">
+        <h4 class="highlightText">
+          11th - 14th August 2025 | MIT World Peace University, Pune
+        </h4>
+
+        <p class="typingText">
+          Step into four electrifying days of innovation, networking, and
+          opportunities at Startup Expo 2025.<span class="blinkingCursor"
+            >|</span
+          >
+        </p>
+        <p></p>
+        <p class="typingText">
+          Join entrepreneurs, investors, and changemakers as we build the future
+          together.<span class="blinkingCursor">|</span>
+        </p>
+      </div>
+
+            <!---------About Section-------->
+      <section id="aboutSection">
+        <div class="about-container">
+          <div class="about-row">
+            <div class="about-box text-box">
+              <h2>About Startup Expo 2025</h2>
+              <p>
+                Organised by the E-Cell at MIT World Peace University, Startup
+                Expo 2025 is a pioneering platform bringing together over 60
+                startups daily, more than 20 investors, and thousands of
+                students, corporates, and enthusiasts to celebrate
+                entrepreneurship and innovation.
+                <br /><br />
+                From product showcases and live pitches to mentorship and
+                networking, Startup Expo is your gateway to connect with the
+                brightest minds shaping tomorrow’s world.
+              </p>
+            </div>
+            <div class="image-box">
+              <img src="./img/startup-expo.png" alt="Startup Expo" />
+            </div>
+          </div>
+
+          <div class="about-row">
+            <div class="image-box2">
+              <img src="./img/MITWPU.png" alt="MIT-WPU Campus" />
+            </div>
+            <div class="about-box text-box">
+              <h2>About MIT-WPU</h2>
+              <p>
+                MIT World Peace University (MIT-WPU) stands as a beacon of
+                transformative education rooted in peace and innovation. With
+                over 65,000 students across disciplines such as engineering,
+                medicine, pharmacy, management, and design, MIT-WPU is committed
+                to holistic development, practical learning, and fostering
+                global impact.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-------------------------------------------------------------------------------------------------------------------------------->
+      <!------------------------------------------------- Event highlights Corousel ---------------------------------------------------->
+      <section class="highlightsSection" id="carousel">
+        <h2 id="event-heading">Expo Highlights</h2>
+        <div class="highlightGrid">
+          <div class="highlightCard">
+            <h3>Startup Showcases</h3>
+            <p>
+              Daily exhibitions of cutting-edge products and solutions by
+              participating startups.
+            </p>
+          </div>
+          <div class="highlightCard">
+            <h3>Panel Discussions</h3>
+            <p>
+              Conversations with entrepreneurs, investors, and professionals
+              across diverse sectors.
+            </p>
+          </div>
+          <div class="highlightCard">
+            <h3>Roam Around Interviews</h3>
+            <p>
+              Live broadcasts featuring entrepreneurs sharing their startup
+              journeys.
+            </p>
+          </div>
+          <div class="highlightCard">
+            <h3>1-Minute Pitch Decks</h3>
+            <p>Concise and impactful pitches to investors and the audience.</p>
+          </div>
+          <div class="highlightCard">
+            <h3>Networking Sessions</h3>
+            <p>
+              Connect with industry leaders, potential collaborators, and fellow
+              innovators.
+            </p>
+          </div>
+          <div class="highlightCard">
+            <h3>Mentorship Programs</h3>
+            <p>
+              Guidance and insights from experienced entrepreneurs and
+              professionals.
+            </p>
+          </div>
+          <div class="highlightCard">
+            <h3>Workshops</h3>
+            <p>
+              Participate in hands-on sessions to build essential
+              entrepreneurial skills.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <div id="featured">
+        <div class="fheading">
+          <h1
+            style="
+              text-align: center;
+              font-size: 2.5em;
+              font-weight: 600;
+              margin-bottom: 3.7vw;
+            "
+          >
+            What Do We Offer ?
+          </h1>
+        </div>
+        <div class="fsub-heading">
+          <h2 style="color: #ff5d0d">For Students Section</h2>
+          <h3 style="margin-top: 1.5rem">Why Students Should Attend</h3>
+        </div>
+        <div class="student-cards-container">
+          <div class="student-card">
+            <h3
+              class="student-card-heading"
+              style="color: #ff5d0d; margin-top: 1.5rem"
+            >
+              Network with Entrepreneurs
+            </h3>
+            <p class="student-card-subheading">
+              Build connections with <br />founders, professionals, and
+              <br />investors.
+            </p>
+          </div>
+          <div class="student-card">
+            <h3
+              class="student-card-heading"
+              style="color: #ff5d0d; margin-top: 1.5rem"
+            >
+              Gain Insider Knowledge
+            </h3>
+            <p class="student-card-subheading">
+              Explore industry trends, research advancements, <br />and future
+              opportunities.
+            </p>
+          </div>
+          <div class="student-card">
+            <h3
+              class="student-card-heading"
+              style="color: #ff5d0d; margin-top: 1.5rem"
+            >
+              Explore Internship Opportunities
+            </h3>
+            <p class="student-card-subheading">
+              Discover internships at top <br />startups for real-world
+              experience.
+            </p>
+          </div>
+          <div class="student-card">
+            <h3
+              class="student-card-heading"
+              style="color: #ff5d0d; margin-top: 1.5rem"
+            >
+              Seek Funding
+            </h3>
+            <p class="student-card-subheading">
+              Pitch your projects or <br />research ideas to potential
+              investors.
+            </p>
+          </div>
+        </div>
+        <div class="fsub-heading">
+          <h2 style="color: #ff5d0d">For Startups Section</h2>
+          <h3 style="margin-top: 1.5rem">Why Startups Should Join</h3>
+        </div>
+        <div class="student-cards-container">
+          <div class="student-card">
+            <h3
+              class="student-card-heading"
+              style="color: #ff5d0d; margin-top: 1.5rem"
+            >
+              Pitch to Investors
+            </h3>
+            <p class="student-card-subheading">
+              Showcase your venture to a <br />panel of leading investors and
+              VCs.
+            </p>
+          </div>
+          <div class="student-card">
+            <h3
+              class="student-card-heading"
+              style="color: #ff5d0d; margin-top: 1.5rem"
+            >
+              Showcase Ingenuity
+            </h3>
+            <p class="student-card-subheading">
+              Display your cutting-edge <br />solutions to a diverse audience.
+            </p>
+          </div>
+          <div class="student-card">
+            <h3
+              class="student-card-heading"
+              style="color: #ff5d0d; margin-top: 1.5rem"
+            >
+              Recruit Talented Interns
+            </h3>
+            <p class="student-card-subheading">
+              Find skilled students to <br />join your growing team.
+            </p>
+          </div>
+          <div class="student-card">
+            <h3
+              class="student-card-heading"
+              style="color: #ff5d0d; margin-top: 1.5rem"
+            >
+              Refine Your Ideas
+            </h3>
+            <p class="student-card-subheading">
+              Receive expert <br />feedback to enhance <br />your strategy and
+              product.
+            </p>
+          </div>
+          <div class="student-card">
+            <h3
+              class="student-card-heading"
+              style="color: #ff5d0d; margin-top: 2.5rem"
+            >
+              Get Feedback
+            </h3>
+            <p class="student-card-subheading">
+              Test your products with potential buyers <br />and iterate
+              effectively.
+            </p>
+          </div>
+        </div>
+        <div class="fsub-heading">
+          <h2 style="color: #ff5d0d">For Investors Section</h2>
+          <h3 style="margin-top: 1.5rem">Why Investors Should Attend</h3>
+        </div>
+        <div class="student-cards-container">
+          <div class="student-card">
+            <h3
+              class="student-card-heading"
+              style="color: #ff5d0d; margin-top: 1.5rem"
+            >
+              Discover New Ventures
+            </h3>
+            <p class="student-card-subheading">
+              Explore diverse startups across sectors <br />ready for strategic
+              investment.
+            </p>
+          </div>
+          <div class="student-card">
+            <h3
+              class="student-card-heading"
+              style="color: #ff5d0d; margin-top: 1.5rem"
+            >
+              Invest in Promising Startups
+            </h3>
+            <p class="student-card-subheading">
+              Find bootstrapped and seed-funded <br />startups with high growth
+              potential.
+            </p>
+          </div>
+          <div class="student-card">
+            <h3
+              class="student-card-heading"
+              style="color: #ff5d0d; margin-top: 1.5rem"
+            >
+              Network with Industry Leaders
+            </h3>
+            <p class="student-card-subheading">
+              Connect with venture capitalists,<br />
+              founders, and industrialists.
+            </p>
+          </div>
+          <div class="student-card">
+            <h3
+              class="student-card-heading"
+              style="color: #ff5d0d; margin-top: 1.5rem"
+            >
+              Diversify Your Portfolio
+            </h3>
+            <p class="student-card-subheading">
+              Add high-potential startups<br />
+              to strengthen your <br />investment mix.
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <!-------------------------------------------------------------------------------------------------------------------------------->
+      <!------------------------------------------------- Speaker section ---------------------------------------------------->
+<section id="speakerSection">
+        <h1 class="dayGalleryTitle">Our Speakers</h1>
+        <div class="day-buttons">
+          <button class="tab-button active" data-day="day1">Day 1</button>
+          <button class="tab-button" data-day="day2">Day 2</button>
+          <button class="tab-button" data-day="day3">Day 3</button>
+        </div>
+
+        <div class="day-content-wrapper">
+          <div class="day-content active" id="day1">
+            <div class="speakerContainer">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="img/Sahil Puri.jpeg" alt="Sahil Puri" />
+                    <h2>Sahil Puri</h2>
+                    <h3>Former Chief of Staff, Nothing</h3>
+                  </div>
+                  <div class="flip-card-back">
+                    <h2>Sahil Puri</h2>
+                    <h3>Sahil Puri is a seasoned brand and product strategist with expertise in consumer tech and digital marketing. Currently Chief of Staff at Nothing, he previously led CMF design there. He has held key roles at Meesho, Noise, and Flipkart, focusing on brand positioning and growth. An IIM Indore alumnus, Sahil blends strategic insight with design to build impactful brands.</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="img/Sehnaaz Sheikh.jpeg" alt="Sehnaaz Sheikh" />
+                    <h2>Sehnaaz Sheikh</h2>
+                    <h3>Senior Brand Manager</h3>
+                  </div>
+                  <div class="flip-card-back">
+                    <h2>Sehnaaz Sheikh</h2>
+                    <h3>Sehnaaz Sheikh, a luxury brand strategist with experience across global fashion and interiors. She has worked with brands like Macro and co-founded Truedotin, a top influencer marketing agency. She also lead MGLuxm, mentoring future luxury professionals.</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="img/Mohit rathod.jpeg" alt="Mohit Rathod" />
+                    <h2>Mohit Rathod</h2>
+                    <h3>Co-Founder, Truly Desi</h3>
+                  </div>
+                  <div class="flip-card-back">
+                    <h2>Mohit Rathod</h2>
+                    <h3>Co-founder who played a key role in the rapid expansion of Truly Desi, a D2C brand in the dairy sector. His management consultancy background has been crucial in strategizing and executing significant company growth.</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="img/Tushar Pakhre.jpeg" alt="Tushar Pakhare" />
+                    <h2>Tushar Pakhare</h2>
+                    <h3>Founder and CMO, Startup Maharashtra</h3>
+                  </div>
+                  <div class="flip-card-back">
+                    <h2>Tushar Pakhare</h2>
+                    <h3>Tushar Pakhare is the Founder of Startup Maharashtra, supporting first-gen Marathi entrepreneurs through funding and networking. He’s the Growth Marketing Manager at Plobal Apps and ex-Head of Marketing at Rapid Innovation, with expertise in performance marketing, Web3, and AI-driven growth.</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="img/Sandeep Prasad.jpeg" alt="Sandeep Prasad" />
+                    <h2>Sandeep Prasad</h2>
+                    <h3>Head of Growth, E-Motorad</h3>
+                  </div>
+                  <div class="flip-card-back">
+                    <h2>Sandeep Prasad</h2>
+                    <h3>Sandeep Prasad is Head of Growth at EMotorad with 14+ years in D2C and e-commerce. He founded SleepyHug and Wink & Nod, and scaled e-com at Livpure and Polycab. He brings deep expertise in strategy, marketing, and growth. Sandeep holds degrees from Carnegie Mellon and Chicago Booth.</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="day-content" id="day2">
+            <div class="speakerContainer">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="https://placehold.co/150x150/ff6a00/ffffff?text=Srinivas" alt="Srinivas Sarkar" />
+                    <h2>Srinivas Sarkar</h2>
+                    <h3>Founder & CEO, Coupl</h3>
+                  </div>
+                  <div class="flip-card-back">
+                    <h2>Srinivas Sarkar</h2>
+                    <h3>Srinivas Sarkar is the Co-founder & CEO of Coupl, India’s first neobank for couples, backed by Y Combinator. A Forbes 30 Under 30 Asia honoree and former EY consultant, he is also a BITS Pilani alum. Srini is passionate about building fintech products across the US–India corridor.</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="img/Sneha Basu Roy.jpeg" alt="Sneha Basu Roy" />
+                    <h2>Sneha Basu Roy</h2>
+                    <h3>VC & Startup Patnerships, Google</h3>
+                  </div>
+                  <div class="flip-card-back">
+                    <h2>Sneha Basu Roy</h2>
+                    <h3>Holds a key role at Google India, focusing on VC & Startup partnerships with an emphasis on the edtech ecosystem. Her extensive experience across digital strategy, product, and sales at Google is invaluable.</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="img/Nidhi Sudhan.jpeg" alt="Nidhi Sudhan" />
+                    <h2>Nidhi Sudhan</h2>
+                    <h3>Co-Founder, CDF</h3>
+                  </div>
+                  <div class="flip-card-back">
+                    <h2>Nidhi Sudhan</h2>
+                    <h3>Co-founder of Citizen Digital Foundation, focusing on AI Ethics, AI & Tech Governance, Equitable AI, and Post-truth Media. She advocates for responsible technology development and its positive societal impact.</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="img/Raksheet Jain.jpg" alt="Raksheet Jain" />
+                    <h2>Raksheet Jain</h2>
+                    <h3>Co-Founder, Aignosis</h3>
+                  </div>
+                  <div class="flip-card-back">
+                    <h2>Raksheet Jain</h2>
+                    <h3>Co-founder of Orbo AI, specializing in advanced AI and computer vision solutions. He brings deep technical expertise in areas like hyper-spectral imaging and the practical deployment of AI-based systems.</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./img/Dhananjay Yadav.jpeg" alt="Dhananjay Yadav" />
+                    <h2>Dhananjay Yadav</h2>
+                    <h3>Co-Founder & CEO, Neosapien AI</h3>
+                  </div>
+                  <div class="flip-card-back">
+                    <h2>Dhananjay Yadav</h2>
+                    <h3>Co-founder and CEO of Neosapien, an innovative company focused on wearable technology, notably recognized for its AI-powered products. With extensive global experience, he has a strong track record in scaling technology startups.</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./img/" alt="Dhruva Modak" />
+                    <h2>Dhruva Modak</h2>
+                    <h3>Level Designer, Ubisoft India Studios</h3>
+                  </div>
+                  <div class="flip-card-back">
+                    <h2>Dhruva Modak</h2>
+                    <h3>This is Dhruva, a Level designer working at Ubisoft India. I've worked on multiple AAA games including Assassins Creed. Apart from it, I was a state badminton coach for U-11 to U-17 players representing Maharashtra state at All India National championships.</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="day-content" id="day3">
+            <div class="speakerContainer">
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="./img/" alt="Rajesh R Dembla" />
+                    <h2>Rajesh R Dembla</h2>
+                    <h3>Angel Investor and Entrepreneur</h3>
+                  </div>
+                  <div class="flip-card-back">
+                    <h2>Rajesh R Dembla</h2>
+                    <h3>A seasoned serial entrepreneur and active angel investor, founder of Zoozle.in. His platform aims to democratize online retail by empowering small and micro-distributors, leveraging his significant experience in e-commerce.</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="img/dd.webp" alt="Yogesh Thite" />
+                    <h2>Yogesh Thite</h2>
+                    <h3>Founder, Entie</h3>
+                  </div>
+                  <div class="flip-card-back">
+                    <h2>Yogesh Thite</h2>
+                    <h3>Entrepreneur and investor who founded Entie, a platform designed to connect startups with suitable investors and co-founders. He also leads Entie Angels and consults early-stage startups on fundraising.</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="img/dd.webp" alt="Rahul Jain" />
+                    <h2>Rahul Jain</h2>
+                    <h3>Founder, Indian Angel Network</h3>
+                  </div>
+                  <div class="flip-card-back">
+                    <h2>Rahul Jain</h2>
+                    <h3>Entrepreneur and prolific angel investor, having founded the Pune Angel Network. He maintains a diverse personal investment portfolio across various sectors, actively supporting and growing new ventures.</h3>
+                  </div>
+                </div>
+              </div>
+
+              <div class="flip-card">
+                <div class="flip-card-inner">
+                  <div class="flip-card-front">
+                    <img src="img/dd.webp" alt="Anil Arya" />
+                    <h2>Anil Arya</h2>
+                    <h3>CFO, Wakefit</h3>
+                  </div>
+                  <div class="flip-card-back">
+                    <h2>Anil Arya</h2>
+                    <h3>Anil Arya is a seasoned finance leader with 30 years of experience in consumer-focused roles. He is known for driving growth through business ownership, compliance, and ethical financial practices. Passionate about technology, he champions automation and AI to boost efficiency and value creation.</h3>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+ <!-------------------------------------------------------------------------------------------------------------------------------->
+      <!------------------------------------------------- Investor section ---------------------------------------------------->
+      <section class="investor-section">
+        <h1>Our Investors</h1>
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="investor-image">
+                <img src="img/investors/brendonFaroz.jpg" alt="Investor 1" />
+              </div>
+              <div class="investor-info">
+                <h2>Brendon Faroz</h2>
+                <p class="role">Regional Manager- Western region</p>
+                <p class="role">Indian Angels Network</p>
+                <p>
+                  With more than half a decade worth of experience in startup ecosystems he is thriving as the Regional Head of Indian Angels Network. He was also a part of CBA Startups and Piper Serica Angel funds.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="investor-image">
+                <img src="img/investors/nikhilThitte.png" alt="Investor 2" />
+              </div>
+              <div class="investor-info">
+                <h2>Nikhil Thite</h2>
+                <p class="role">CMO</p>
+                <p class="role">Entie</p>
+                <p>
+                  He is a startup reviver. He has helped multiple startups revive over the last decade and he has even helped cofound two startups. Currently, he is a CMO for Entie, offering multiple services such as market strategy, brand consulting and even growth marketing.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="investor-image">
+                <img src="img/investors/rohitRathi.jpg" alt="Investor 3" />
+              </div>
+              <div class="investor-info">
+                <h2>Rohit Rathi</h2>
+                <p class="role">Proprietor Of Rohit’s Supply And Logistics</p>
+                <p class="role">Director of PositiEv</p>
+                <p>
+                  A Pune based entrepreneur prominently known for founding and operating "Rohiet’s Supply And Logistics." He is the co-founder of ‘Kartavya’, a non-profit that originated during covid to provide for those in need. He has invested in multiple businesses and is currently also working as the Director of PositiEv.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="investor-image">
+                <img src="img/investors/rahulJain.jpg" alt="Investor 4" />
+              </div>
+              <div class="investor-info">
+                <h2>Rahul Jain</h2>
+                <p class="role">Founder</p>
+                <p class="role">Pune Angels Network</p>
+                <p>
+                 A serial entrepreneur with a vast experience in fostering growth for diverse organisations. He is also the founder of Pune angel network, a dynamic platform that brings together visionary entrepreneurs and experienced investors to fuel the next generation of innovative startups. Their mission is to empower early-stage businesses.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="investor-image">
+                <img src="img/investors/khushiAgarwal.jpg" alt="Investor 5" />
+              </div>
+              <div class="investor-info">
+                <h2>Khushi Agarwal</h2>
+                <p class="role">Investment Analyst Trainee</p>
+                <p class="role">247VC</p>
+                <p>
+                   She is a healthtech and biotech expert, a go-to person for D2C brands and startups to scale with sharp storytelling and GTM insight. She is currently an Analyst at 247VC, a SEBI-registered AIF CAT 2 seed-stage fund.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="investor-image">
+                <img src="img/investors/amitGhule.jpg" alt="Investor 6" />
+              </div>
+              <div class="investor-info">
+                <h2>Amit Ghule</h2>
+                <p class="role">Founder</p>
+                <p class="role">SimpleForge</p>
+                <p>
+                  He is a founder-turned-venture capitalist with almost a decade of experience in startup fundraising and venture building. The founder of SimpleForge who has pioneered robotic 3D Printed Construction technology and has domain expertise in Robotics, 3D Printing, Medical Devices, and Oil & Gas.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="investor-image">
+                <img src="img/investors/saurabhGandhe.png" alt="Investor 7" />
+              </div>
+              <div class="investor-info">
+                <h2>Saurabh Gandhe</h2>
+                <p class="role">Senior Vice President of Engineering</p>
+                <p class="role">DeepIntent</p>
+                <p>
+                  He is currently VP of Engineering & MD (India) at DeepIntent with almost two decades of experience in software development and tech leadership. He is driving innovation at DeepIntent while actively contributing to open-source projects like Prebid.JS.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="investor-image">
+                <img src="img/investors/jitendraNene.jpeg" alt="Investor 8" />
+              </div>
+              <div class="investor-info">
+                <h2>Jitendre Nene</h2>
+                <p class="role">Chief Growth Officer</p>
+                <p class="role">Primus Techsystems</p>
+                <p>
+                  He is the current Chief growth officer at Primus Techsystems and is responsible for partnerships, alliances and acquisitions. Having over a decade of experience working in the startup industry, he now leverages experience and network.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="investor-image">
+                <img src="img/investors/dravyaJain.png" alt="Investor 9" />
+              </div>
+              <div class="investor-info">
+                <h2>Dravya Jain</h2>
+                <p class="role">Investment Associate </p>
+                <p class="role">Windrose Capital </p>
+                <p>
+                  Dravya Jain is an Investment Associate at Windrose Capital, Pune. She began her career at KPMG in risk advisory before moving into venture capital. At Windrose, she focuses on deal evaluation, portfolio management, and investor relations, contributing to investment decisions and performance tracking.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="investor-image">
+                <img src="img/investors/yashodhanNaik.jpg" alt="Investor 10" />
+              </div>
+              <div class="investor-info">
+                <h2>Yashodhan Naik</h2>
+                <p class="role">Director</p>
+                <p class="role">Iravan</p>
+                <p>
+                  He founded Navifly, a drone aviation startup, leading its development from concept to launch in India and Ireland, with backing from the Irish Aviation Authority and Boeing. He combines technical depth with customer insight to deliver efficient, user-centric products. His background spans drone electronics, super-capacitor research, and EV conversion.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="investor-image">
+                <img src="img/investors/aniketTapre.jpg" alt="Investor 11" />
+              </div>
+              <div class="investor-info">
+                <h2>Aniket Tapre</h2>
+                <p class="role">Founder & CEO</p>
+                <p class="role">Ampersand</p>
+                <p>
+                  He is a distinguished entrepreneur, seasoned investor, and respected advisor with over three decades of experience in technology and innovation. Currently, he is the Founder and CEO of Ampersand, a firm dedicated to providing growth advisory, bridging capital, and M&A services to companies.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="investor-image">
+                <img src="img/investors/shraddhaMunot.jpg" alt="Investor 12" />
+              </div>
+              <div class="investor-info">
+                <h2>Shraddha Munot</h2>
+                <p class="role">Partner</p>
+                <p class="role">PrimePlex Ventures</p>
+                <p>
+                   A passionate entrepreneur with ventures spanning social impact, finance, and consumer products. She founded Panchi NGO, Primeplex Ventures, and Froodelite, a D2C brand promoting clean consumption.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="investor-image">
+                <img src="img/investors/riteshMunot.jpg" alt="Investor 13" />
+              </div>
+              <div class="investor-info">
+                <h2>Ritesh Munot</h2>
+                <p class="role">Partner</p>
+                <p class="role">PrimePlex Ventures</p>
+                <p>
+                  A seasoned entrepreneur with over 20 years in the 925 sterling silver wholesale trade and 6 years in the gold and diamond jewellery sector. As co-founder of Berrymint, a premium lifestyle brand, he brings innovation and a passion for elegance, wellness, and modern aesthetics beyond conventional business norms.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="investor-image">
+                <img src="img/investors/ronakKhothari.jpg" alt="Investor 14" />
+              </div>
+              <div class="investor-info">
+                <h2>Ronak Kothari</h2>
+                <p class="role">Partner</p>
+                <p class="role">PrimePlex Ventures</p>
+                <p>
+                  He is the co-founder of Primeplex Ventures, a multi-asset and angel investment firm active across diverse sectors. He also founded Tijori by Aakaar Ventures, a brand crafting copper, brass, and bronze products that fuse traditional Indian artistry with modern utility.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="investor-image">
+                <img src="img/investors/tusharShetty.jpg" alt="Investor 15" />
+              </div>
+              <div class="investor-info">
+                <h2>Tushar Shetty</h2>
+                <p class="role">CEO</p>
+                <p class="role">Ideas to Impact Hub</p>
+                <p>
+                  He is a tech investor and ecosystem enabler with over a decade of experience and a strong focus on building solutions for Bharat. He is leading Ideas to Impacts Hub and is actively involved with initiatives like SEAP (Software Exporters Association of Pune), where he contributes to fostering innovation and startup growth.
+                </p>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="investor-image">
+                <img src="img/investors/chetanWagh.jpg" alt="Investor 16" />
+              </div>
+              <div class="investor-info">
+                <h2>Chetan Wagh</h2>
+                <p class="role">CEO</p>
+                <p class="role">iTechSeed India Growth Ventures Pvt Ltd</p>
+                <p>
+                   A strategic leader with over 28 years of global experience across roles such as CEO, CDO, Advisor, and P&L Owner in services-led businesses. Known for driving customer service excellence, business development, and solution delivery in dynamic markets.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+        <div class="swiper-nav-buttons">
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+      </section>
+
+      <section id="wadhwanisection" class="Wadhwani">
+        <h1
+          style="
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: 600;
+            margin-bottom: 3.7vw;
+          "
+        >
+          Wadhwani Foundation
+        </h1>
+        <div class="wadhwani-container">
+          <div class="wadhwani-row">
+            <div class="imagew-box">
+              <img src="./img/wadhwani.png" alt="Wadhwani Foundation" />
+            </div>
+            <div class="wadhwani-box">
+              <h2>About Wadhwani Foundation</h2>
+              <p>
+                The Wadhwani Foundation is a global non-profit organization
+                dedicated to accelerating economic development in emerging
+                economies through entrepreneurship, innovation, and job
+                creation. Founded by Dr. Romesh Wadhwani, the foundation focuses
+                on empowering entrepreneurs and fostering innovation to create
+                sustainable economic growth.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+<!-------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------- Sponsor section ---------------------------------------------------->
+      <section class="sponsor-section">
+  <h2 class="section-title">Our Sponsors</h2>
+  <div class="sponsor-grid">
+    
+    <a href="https://lucofast.com/" class="sponsor-card">
+      <img src="./img/lucofast.jpg" alt="Lucofast Logo" />
+      <h3>Hydration Partner</h3>
+      <h2>Lucofast</h2>
+      <div class="sponsor-info">Leading Tech Solutions</div>
+    </a>
+
+    <a href="https://dagoodfoodshack.com/" class="sponsor-card">
+      <img src="./img/the good food.jpg" alt="The Good Food Shack Logo" />
+      <h3>Refreshments Partner</h3>
+      <h2>The Good Food Shack</h2>
+      <div class="sponsor-info">Innovate with Us</div>
+    </a>
+
+    <a href="https://www.atherenergy.com/" class="sponsor-card">
+      <img src="./img/Ather.png" alt="Ather Logo" />
+      <h3>Mobility Partner</h3>
+      <h2>Ather</h2>
+      <div class="sponsor-info">Empowering Future</div>
+    </a>
+
+    <a href="https://framedwall.in/" class="sponsor-card">
+      <img src="./img/framedwall.jpg" alt="The Framed Wall Logo" />
+      <h3>Printing Partner</h3>
+      <h2>The Framed Wall</h2>
+      <div class="sponsor-info">Creative Minds</div>
+    </a>
+
+    <a href="https://thaturbanstore.com/" class="sponsor-card">
+      <img src="./img/urbanstore.jpg" alt="That Urban Store Logo" />
+      <h3>Clothing Partner</h3>
+      <h2>That Urban Store</h2>
+      <div class="sponsor-info">Style with Purpose</div>
+    </a>
+  </div>
+</section>
+
+<!-------------------------------------------------------------------------------------------------------------------------------->
+<!------------------------------------------------- Previous Partner section ---------------------------------------------------->
+
+      <section id="partnerSection" class="partners">
+        <h1
+          style="
+            text-align: center;
+            font-size: 2.5em;
+            font-weight: 600;
+            margin-bottom: 3.7vw;
+            color: white;
+          "
+        >
+          Previous Partners
+        </h1>
+        <div id="moving-div">
+          <div id="blurleft"></div>
+          <div class="move">
+            <img src="./img/microsoft-logo.png" alt="Microsoft" />
+            <img src="./img/Decathlon-Logo.png" alt="Decathlon" />
+            <img src="./img/Artic_Fox_Logo.png" alt="Artic Fox" />
+            <img src="./img/campusTimes_logo.jpeg" alt="Campus Times" />
+            <img src="./img/iMOCH_logo.png" alt="iMoch" />
+          </div>
+          <div class="move">
+            <img src="./img/microsoft-logo.png" alt="Microsoft" />
+            <img src="./img/Decathlon-Logo.png" alt="Decathlon" />
+            <img src="./img/Artic_Fox_Logo.png" alt="Artic Fox" />
+            <img src="./img/campusTimes_logo.jpeg" alt="Campus Times" />
+            <img src="./img/iMOCH_logo.png" alt="iMoch" />
+          </div>
+          <div id="blurright"></div>
+        </div>
+      </section>
+
+      <div id="videoSection">
+        <video
+          src="./img/ecell reel.mp4"
+          autoplay
+          muted
+          loop
+          playsinline
+        ></video>
+        <div class="videoSection-center"></div>
+      </div>
+      <section id="FAQ">
+        <br />
+        <br />
+        <h1>FAQ</h1>
+        <div>
+          <details>
+            <summary>
+              <i class="ri-arrow-down-s-line icon"></i>
+              <h1>Q) What happens in the event??</h1>
+            </summary>
+
+            <div class="FAQ-answer">
+              <div class="FAQ_hoverEffect"></div>
+              <p>
+                Startup Expo 2025 is a major event that typically features a
+                variety of activities aimed at fostering entrepreneurship,
+                leadership and networking among startups, investors, and
+                industry professionals.
+              </p>
+            </div>
+          </details>
+        </div>
+        <div>
+          <details>
+            <summary>
+              <i class="ri-arrow-down-s-line icon"></i>
+              <h1>Q) When is the Event for this year??</h1>
+            </summary>
+
+            <div class="FAQ-answer">
+              <div class="FAQ_hoverEffect"></div>
+              <p>
+                The Startup Expo 2025 event is scheduled to take place from
+                August 11th to August 14th.
+              </p>
+            </div>
+          </details>
+        </div>
+        <div>
+          <details>
+            <summary>
+              <i class="ri-arrow-down-s-line icon"></i>
+              <h1>Q) What do the attendees get??</h1>
+            </summary>
+
+            <div class="FAQ-answer">
+              <div class="FAQ_hoverEffect"></div>
+              <p>
+                Attendees of Startup Expo 2025 gain access to valuable
+                networking opportunities, insights from industry experts,
+                exposure to innovative products and services, potential
+                investment opportunities, and the chance to participate in
+                workshops, panel discussions, and pitch sessions.
+              </p>
+            </div>
+          </details>
+        </div>
+        <div>
+          <details>
+            <summary>
+              <i class="ri-arrow-down-s-line icon"></i>
+              <h1>Q) Is there any Registration Fees??</h1>
+            </summary>
+
+            <div class="FAQ-answer">
+              <div class="FAQ_hoverEffect"></div>
+              <p>
+                No, there is no registration fee for attending Startup Expo
+                2025.
+              </p>
+            </div>
+          </details>
+        </div>
+
+        <div class="moreQuestions">
+          <h1>Have More Questions?</h1>
+          <br />
+          <p>
+            Have a question or need assistance? We are here to help. Reach out
+            to us via email or give us a call
+          </p>
+        </div>
+      </section>
+      <section class="form-container" id="contact">
+        <div class="form-row">
+          <div class="formCol leftForm">
+            <div class="contactTitle">
+              <h2>Get In Touch</h2>
+              <p>
+                Feel free to reach out to us with any inquiries or collaboration
+                opportunities regarding our StartupExpo 2025
+              </p>
+            </div>
+          </div>
+
+          <div class="formCol rightForm">
+            <form
+              action="https://formspree.io/f/xyzgdygk"
+              method="POST"
+              class="messageForm"
+            >
+              <div class="inputGroup halfWidth">
+                <input
+                  class="name"
+                  type="text"
+                  name="name"
+                  required="required"
+                />
+                <label>Your Name</label>
+              </div>
+
+              <div class="inputGroup halfWidth">
+                <input type="email" name="email" required="required" />
+                <label>Email</label>
+              </div>
+
+              <div class="inputGroup fullWidth">
+                <input type="text" name="subject" required="required" />
+                <label>Subject</label>
+              </div>
+
+              <div class="inputGroup fullWidth">
+                <textarea name="message" required="required"></textarea>
+                <label>Say Something</label>
+              </div>
+
+              <div class="inputGroup fullWidth">
+                <button type="submit">Send Message</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <footer>
+        <div class="footer-upper">
+          <img src="./img/ECELL-LOGO.png" alt="E-Cell Logo" />
+          <div class="footer-part">
+            <h3>
+              Location
+              <div class="underline"><span></span></div>
+            </h3>
+            <p>MIT World Peace University</p>
+            <p>Paud Rd, Kothrud, Pune</p>
+            <p>Maharashtra 411038</p>
+            <p class="email-id">startupexpo@mitwpu.edu.in</p>
+            <h4>+91-7756973005</h4>
+          </div>
+          <div class="footer-part">
+            <h3>
+              Links
+              <div class="underline"><span></span></div>
+            </h3>
+            <p><a href="#featured">Highlights</a></p>
+            <p><a href="./expo25.html">Expo-2025</a></p>
+            <p><a href="#speakerSection">Speakers</a></p>
+            <p><a href="#FAQ">FAQ'S</a></p>
+            <p><a href="#contact">Contact</a></p>
+          </div>
+          <div class="footer-part4">
+            <h3>
+              Follow us
+              <div class="underline"><span></span></div>
+            </h3>
+            <div class="socialMedia">
+              <a href="#"><i class="fab fa-facebook-f"></i></a>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+              <a
+                href="https://www.instagram.com/startupexpo.mitwpu?igsh=aThmeHQ3MXpzMm50"
+                target="_blank"
+                ><i class="fab fa-instagram"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/company/startup-expo-mit-wpu/"
+                target="_blank"
+                ><i class="fab fa-linkedin-in"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+        <p>E-Cell StartupExpo © 2025 - All Rights Reserved</p>
+        <br />
+      </footer>
+    </div>
+    <script src="https://unpkg.com/sheryjs@1.0.0-beta.1/dist/Shery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+
+    <script
+      type="text/javascript"
+      src="https://unpkg.com/sheryjs/dist/Shery.js"
+    ></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
