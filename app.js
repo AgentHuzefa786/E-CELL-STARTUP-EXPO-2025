@@ -31,39 +31,39 @@ function heroAnimation() {
 heroAnimation();
 
 // --- Offer Section Animation ---
-function offerAnim() {
-  gsap.from(".fheading", {
-    opacity: 0,
-    duration: 0.4,
-    y: 100,
-    scrollTrigger: {
-      trigger: ".fheading",
-      scrub: 2,
-    },
-  });
+// function offerAnim() {
+//   gsap.from(".fheading", {
+//     opacity: 0,
+//     duration: 0.4,
+//     y: 100,
+//     scrollTrigger: {
+//       trigger: ".fheading",
+//       scrub: 2,
+//     },
+//   });
 
-  gsap.from(".student-cards-container", {
-    opacity: 0,
-    y: 100,
-    scrollTrigger: {
-      trigger: ".fheading",
-      scrub: 2,
-      start: "top 20%",
-      end: "top 0%",
-    },
-  });
+//   gsap.from(".student-cards-container", {
+//     opacity: 0,
+//     y: 100,
+//     scrollTrigger: {
+//       trigger: ".fheading",
+//       scrub: 2,
+//       start: "top 20%",
+//       end: "top 0%",
+//     },
+//   });
 
-  gsap.from(".fsub-heading", {
-    opacity: 0,
-    duration: 0.4,
-    y: 100,
-    scrollTrigger: {
-      trigger: ".fsub-heading",
-      scrub: 2,
-    },
-  });
-}
-offerAnim();
+//   gsap.from(".fsub-heading", {
+//     opacity: 0,
+//     duration: 0.4,
+//     y: 100,
+//     scrollTrigger: {
+//       trigger: ".fsub-heading",
+//       scrub: 2,
+//     },
+//   });
+// }
+// offerAnim();
 
 // --- Speaker & Partner Section ---
 function speakerPartnerSection() {

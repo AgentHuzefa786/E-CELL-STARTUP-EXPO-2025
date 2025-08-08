@@ -1155,7 +1155,7 @@ h2::after {
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25), 0 0 15px rgba(0, 136, 255, 0.1);
   backdrop-filter: blur(10px);
-  transition: all 0.4s ease-in-out;
+  
   color: #fff;
 }
 
@@ -2457,14 +2457,6 @@ footer > p {
   justify-content: center;
 }
 
-/* .imagew-box {
-  flex: 1 1 300px;
-  text-align: center;
-}
-.imagew-box img {
-  max-width: 100%;
-  border-radius: 10px;
-} */
 
 .imagew-box {
   flex: 1 1 400px;
