@@ -942,7 +942,7 @@ nav {
 /* Highlights Section */
 .highlightsSection {
   padding: 80px 5%;
-  max-width: 1200px;
+  
   margin: 0 auto;
   background: linear-gradient(to right, #1a0d00, #331a00);
   position: relative;
@@ -1044,9 +1044,7 @@ h2::after {
 .highlightGrid .highlightCard:nth-child(7) {
   animation-delay: 0.7s;
 }
-.highlightGrid .highlightCard.wadhwaniCard {
-  animation-delay: 0.8s;
-}
+
 
 /* Keyframe for fade in and slide up animation */
 @keyframes fadeInSlideUp {
@@ -1056,45 +1054,7 @@ h2::after {
   }
 }
 
-/* Wadhwani Card Specific Styling */
-.wadhwaniCard {
-  /* Keeping the original blue gradient as it's not black/orange and contrasts well */
-  background: linear-gradient(135deg, #007bff, #0056b3);
-  color: #ffffff;
-  padding-top: 40px;
-  padding-bottom: 40px;
-  position: relative;
-  overflow: hidden;
-  border: 2px solid transparent; /* Ensure it also has a transparent border for consistency */
-}
 
-.wadhwaniCard:hover {
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 123, 255, 0.6); /* Blue glow for Wadhwani card */
-  border-color: #007bff; /* Blue border on hover for Wadhwani */
-}
-
-.wadhwaniCard h3,
-.wadhwaniCard p {
-  color: #ffffff; /* White text for contrast on the blue gradient */
-}
-
-.wadhwaniCard .badge {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: #ffc107; /* Original bright yellow badge */
-  color: #333; /* Dark text on badge */
-  padding: 8px 20px;
-  border-bottom-left-radius: 12px;
-  font-weight: 700;
-  font-size: 0.9em;
-  text-transform: uppercase;
-  letter-spacing: 0.5px;
-  transform-origin: top right;
-  transform: rotate(45deg) translate(0px, -20px);
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); /* Darker shadow for badge */
-  padding-right: 30px;
-}
 
 /* Responsive Adjustments */
 @media (min-width: 768px) {
@@ -1144,186 +1104,6 @@ h2::after {
 
   .highlight-span-2 {
     grid-column: span 1;
-  }
-}
-
-/* Wadhwani Foundation Section */
-
-/* Wadhwani Box (Card) Specific Styling */
-.wadhwani-box {
-  flex: 1 1 48%;
-  min-width: 300px; /* Minimum width before wrapping to single column */
-  background-color: rgba(255, 255, 255, 0.02);
-  border-radius: 16px;
-  padding: clamp(30px, 5vw, 50px); /* Responsive padding */
-  backdrop-filter: blur(4px);
-  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.04);
-  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
-  position: relative;
-  overflow: hidden;
-}
-
-.wadhwani-box:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 6px 24px rgba(255, 93, 13, 0.4),
-    4px 4px 12px rgba(255, 153, 0, 0.2);
-  border-right: 1px solid rgba(255, 93, 13, 0.3);
-  border-bottom: 1px solid rgba(255, 93, 13, 0.3);
-}
-
-.wadhwani-box h2 {
-  color: #ff5d0d;
-  font-size: clamp(1.8rem, 3vw, 2.2rem);
-  margin-bottom: 15px;
-}
-
-.wadhwani-box p {
-  font-size: clamp(1rem, 1.8vw, 1.15rem);
-  line-height: 1.8;
-  color: #d0d0d0;
-}
-
-/* Wadhwani Card Badge Styling */
-.wadhwani-box .badge {
-  position: absolute;
-  top: 0;
-  right: 0;
-  background-color: #ffc107;
-  color: #333;
-  padding: clamp(6px, 2vw, 10px) clamp(15px, 4vw, 25px);
-  border-bottom-left-radius: 12px;
-  font-weight: 700;
-  font-size: clamp(0.8em, 1.5vw, 1em);
-  transform: rotate(45deg)
-    translate(clamp(0px, 2vw, 10px), clamp(-20px, -4vw, -30px));
-  transform-origin: top right;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
-}
-
-/* Image Box Styling */
-.imagew-box {
-  /* Container for the Wadhwani logo image */
-  padding: 0;
-  background: none;
-  box-shadow: none;
-  flex: 1 1 40%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  /* Added specific control for vertical space */
-  max-height: 300px; /* Limit height even on desktop if needed */
-}
-
-.imagew-box img {
-  width: 100%;
-  max-width: 250px; /* Original desktop max-width */
-  height: auto;
-  border-radius: 12px;
-  transition: transform 0.3s ease;
-  display: block;
-  margin: 0 auto;
-}
-
-.imagew-box img:hover {
-  transform: scale(1.03);
-}
-
-/* imagew-box2 (for MIT-WPU image, usually larger) */
-.imagew-box2 {
-  padding: 0;
-  background: none;
-  box-shadow: none;
-  flex: 1 1 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  max-height: 300px; /* Limit height here too */
-}
-
-.imagew-box2 img {
-  width: 100%;
-  max-width: 800px;
-  height: 250px; /* This height might still be problematic on very small screens */
-  object-fit: cover;
-  border-radius: 12px;
-  background: black;
-  transition: transform 0.3s ease;
-  display: block;
-  margin-top: 35px;
-}
-
-.imagew-box2 img:hover {
-  transform: scale(1.03);
-}
-
-/* Responsive Adjustments for Wadhwani Section */
-@media (max-width: 768px) {
-  #wadhwanisection {
-    padding: 40px 3%; /* Reduced top/bottom padding for smaller screens */
-  }
-  .wadhwani-row,
-  .wadhwani-row.reverse {
-    flex-direction: column; /* Stack items vertically */
-    gap: 20px; /* Reduced gap between elements in column layout */
-  }
-
-  .wadhwani-box {
-    flex: 1 1 100%; /* Take full width when stacked */
-    padding: 25px; /* Fixed padding for mobile for simplicity and tighter fit */
-  }
-
-  .imagew-box {
-    /* Container for Wadhwani logo on mobile */
-    flex: 1 1 auto; /* Allow it to take up natural space */
-    max-height: 180px; /* Set a max height for the container on mobile */
-  }
-
-  .imagew-box img {
-    max-width: 120px; /* **SIGNIFICANTLY REDUCED** for mobile view to prevent stretching */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: contain; /* Ensure entire logo is visible */
-  }
-
-  .imagew-box2 {
-    /* Container for MIT-WPU image on mobile */
-    max-height: 150px; /* Constrain its height as well */
-  }
-  .imagew-box2 img {
-    height: 100px; /* Fixed height for mobile, potentially adjust object-fit if content is cut */
-    margin-top: 15px; /* Smaller margin */
-  }
-
-  /* Badge adjustment for smaller screens */
-  .wadhwani-box .badge {
-    padding: 6px 15px;
-    font-size: 0.75em;
-    transform: rotate(45deg) translate(0px, -15px); /* Adjusted translation for smaller screens */
-  }
-}
-
-/* Additional media query for very small screens */
-@media (max-width: 480px) {
-  #wadhwanisection {
-    padding: 30px 2%; /* Even less padding for very small screens */
-  }
-  .wadhwani-box {
-    padding: 20px; /* Consistent smaller padding */
-  }
-  .wadhwani-box h2 {
-    font-size: 1.5rem; /* Smaller heading text */
-  }
-  .wadhwani-box p {
-    font-size: 0.85rem; /* Smaller paragraph text */
-  }
-  .imagew-box img {
-    max-width: 100px; /* Even smaller for tiny screens */
-  }
-  .imagew-box2 img {
-    height: 80px; /* Adjust height for very small screens */
-  }
-  .wadhwani-box .badge {
-    font-size: 0.65em;
-    transform: rotate(45deg) translate(0px, -10px);
   }
 }
 
@@ -1479,6 +1259,7 @@ h2::after {
 /*------------------------------------------------------------------------------------------------------------------------*/
 /*------------------------------------------------- Speakers ------------------------------------------------------------*/
 
+
 #speakerSection {
   background: linear-gradient(to right, #1a0d00, #331a00);
   padding: 80px 5%;
@@ -1530,7 +1311,7 @@ h2::after {
 }
 
 .day-content.active {
-  max-height: 2000px; /* Increased max-height to accommodate more content on mobile */
+  max-height: 5000px; /* Increased max-height significantly to prevent content cutoff */
   opacity: 1;
   margin-top: 30px;
 }
@@ -1546,12 +1327,11 @@ h2::after {
 
 .flip-card {
   background: transparent;
-  width: 300px;
-  height: 400px;
+  width: 300px; /* Default width for desktop */
+  height: 400px; /* Default height for desktop */
   perspective: 1000px;
   flex-shrink: 0; /* Prevents cards from shrinking */
-  /* Added margin-bottom for better spacing between rows on all screen sizes */
-  margin-bottom: 20px;
+  margin-bottom: 20px; /* Added margin-bottom for better spacing between rows on all screen sizes */
 }
 
 .flip-card-inner {
@@ -1589,8 +1369,8 @@ h2::after {
 
 /* Front face */
 .flip-card-front img {
-  width: 180px;
-  height: 180px;
+  width: 150px;
+  height: 150px;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 15px;
@@ -1600,7 +1380,7 @@ h2::after {
 .flip-card-front h2 {
   font-size: 1.5em; /* Increased font size for better readability */
   color: #fff;
-  margin: 10px;
+  margin: 0;
   white-space: normal; /* Allows name to wrap */
 }
 
@@ -1619,7 +1399,7 @@ h2::after {
 
 .flip-card-back h2 {
   font-size: 1.5em;
-  margin-bottom: 15px;
+  margin-bottom: 10px;
   color: #fff;
   white-space: normal;
 }
@@ -1664,8 +1444,9 @@ h2::after {
   }
   
   .flip-card {
-    width: 250px;
-    height: 350px;
+    width: 90vw; /* Use viewport width for better scaling on mobile */
+    max-width: 300px; /* Limit max width to prevent them from becoming too large on tablets */
+    height: 350px; /* Adjusted height for mobile, can be tweaked further */
   }
   
   .flip-card-front img {
@@ -1689,6 +1470,37 @@ h2::after {
     font-size: 0.8em;
   }
 }
+
+/* Further adjustments for very small screens */
+@media (max-width: 480px) {
+  .flip-card {
+    width: 95vw; /* Even wider on very small screens */
+    height: 320px; /* Slightly shorter for very small screens */
+  }
+
+  .flip-card-front img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .flip-card-front h2 {
+    font-size: 1.1em;
+  }
+
+  .flip-card-front h3 {
+    font-size: 0.8em;
+  }
+
+  .flip-card-back h2 {
+    font-size: 1.1em;
+  }
+
+  .flip-card-back h3 {
+    font-size: 0.75em;
+  }
+}
+
+
 
 /*------------------------------------------------------------------------------------------------------------------------*/
 /*------------------------------------------------- Investors ----------------------------------------------------*/
@@ -1734,7 +1546,7 @@ h2::after {
 }
 
 .swiper-slide:hover {
-  transform: scale(1.05);
+  transform: scale(1.02);
   box-shadow: 0 8px 20px rgba(255, 93, 13, 0.15),
     0 0 15px rgba(255, 93, 13, 0.2);
 }
@@ -2611,65 +2423,51 @@ footer > p {
 }
 
 /* Wadhwani Foundation */
-#wadhwanisection {
+
+
+/* Section styling */
+.Wadhwani {
+  padding: 60px 10px;
   background: linear-gradient(to right, #1a0d00, #331a00);
-  color: white;
-  padding: 100px;
-  margin-top: -60px;
+  color: #fff;
+  font-family: Arial, sans-serif;
 }
 
-.wadhwani-container {
-  display: flex;
-  flex-direction: column;
-  gap: 60px;
+/* Swiper container */
+.new-swiper {
+  max-width: 1200px;
+  margin: 0 auto;
+  position: relative;
 }
 
+/* Title */
+.wadhwani-title {
+  text-align: center;
+  font-size: 2.5em;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+/* Layout for image + text */
 .wadhwani-row {
   display: flex;
   align-items: center;
-  justify-content: center;
   gap: 40px;
   flex-wrap: wrap;
+  justify-content: center;
 }
 
-.wadhwani-row.reverse {
-  flex-direction: row-reverse;
+/* .imagew-box {
+  flex: 1 1 300px;
+  text-align: center;
 }
+.imagew-box img {
+  max-width: 100%;
+  border-radius: 10px;
+} */
 
-.wadhwani-box {
-  flex: 1 1 48%;
-  background-color: rgba(255, 255, 255, 0.02);
-  border-radius: 16px;
-  padding: 30px;
-  backdrop-filter: blur(4px);
-  box-shadow: 0 4px 20px rgba(255, 255, 255, 0.04);
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.wadhwani-box:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 8px 24px rgba(255, 93, 13, 0.3),
-    /* stronger outer glow */ 4px 4px 12px rgba(255, 153, 0, 0.2);
-  /* subtle soft layer */
-  border-right: 1px solid rgba(255, 93, 13, 0.25);
-  /* vivid orange border */
-  border-bottom: 1px solid rgba(255, 93, 13, 0.25);
-}
-
-.wadhwani-box h2 {
-  color: #ff5d0d;
-  font-size: 2rem;
-  margin-bottom: 15px;
-}
-
-.wadhwani-box p {
-  font-size: 1.05rem;
-  line-height: 1.8;
-  color: #d0d0d0;
-}
-
-/* Image Box */
-.imageww-box {
+.imagew-box {
+  flex: 1 1 400px;
   padding: 0;
   background: none;
   box-shadow: none;
@@ -2685,111 +2483,88 @@ footer > p {
   margin: 25px auto 0 auto;
 }
 
-.imagew-box img:hover {
-  transform: scale(1.03);
+
+.wadhwani-box {
+  flex: 1 1 400px;
 }
-
-.imagew-box2 {
-  padding: 0;
-  background: none;
-  box-shadow: none;
-}
-
-.imagew-box2 img {
-  width: 100%;
-  max-width: 800px;
-  height: 250px;
-  border-radius: 12px;
-  background: black;
-  transition: transform 0.3s ease;
-  display: block;
-  margin-top: 35px;
-}
-
-.imagew-box2 img:hover {
-  transform: scale(1.03);
-}
-
-/* Responsive */
-@media (max-width: 768px) {
-  .wadhwani-row,
-  .wadhwani-row.reverse {
-    flex-direction: column;
-  }
-
-  .wadhwani-box {
-    flex: 1 1 100%;
-  }
-
-  .wadhwani-box img {
-    max-height: 300px;
-    object-fit: cover;
-  }
-}
-
-.wadhwani-box:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 6px 24px rgba(255, 93, 13, 0.4),
-    /* stronger outer orange glow */ 4px 4px 12px rgba(255, 153, 0, 0.2);
-  /* soft fill shadow */
-  border-right: 1px solid rgba(255, 93, 13, 0.3);
-  /* brighter orange border */
-  border-bottom: 1px solid rgba(255, 93, 13, 0.3);
-}
-
 .wadhwani-box h2 {
-  color: #ff5d0d;
-  font-size: 1.8rem;
+  font-size: 1.8em;
   margin-bottom: 15px;
 }
-
 .wadhwani-box p {
-  font-size: 1rem;
   line-height: 1.6;
-  color: #e0e0e0;
+  font-size: 1rem;
 }
 
-/* Responsive for mobile */
+.new-swiper-nav-buttons {
+  display: flex;
+  justify-content: space-between;
+  
+  margin-top: 40px;
+}
+
+/* Navigation buttons */
+.new-swiper-button-next,
+.new-swiper-button-prev {
+  background: rgba(0, 0, 0, 0.4);
+  border: 2px solid #ffd700;
+  color: #ffd700;
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
+  transition: all 0.3s ease;
+  
+}
+
+/* Hover effect */
+.new-swiper-button-next:hover,
+.new-swiper-button-prev:hover {
+  background: #ffd700;
+  color: #1a0d00;
+  box-shadow: 0 0 20px rgba(255, 215, 0, 1);
+}
+
+/* Position arrows closer to center vertically */
+.new-swiper-button-prev {
+  left: 15px;
+}
+.new-swiper-button-next {
+  right: 15px;
+}
+
+/* On smaller screens - make them smaller */
 @media (max-width: 768px) {
-  .wadhwani-container {
-    flex-direction: column;
-  }
-
-  .wadhwani-box {
-    flex: 1 1 100%;
+  .new-swiper-button-next,
+  .new-swiper-button-prev {
+    width: 35px;
+    height: 35px;
   }
 }
-
-/* Animation Keyframes */
-@keyframes fadeUp {
-  0% {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-
-  100% {
-    opacity: 1;
-    transform: translateY(0);
-  }
+/* Pagination styling */
+.new-swiper-pagination .swiper-pagination-bullet {
+  background: #ffd700;
+  opacity: 0.6;
+  transition: opacity 0.3s ease;
 }
-
-/* Animate class */
-.animate-fade-up {
-  opacity: 0;
-  animation: fadeUp 1s ease-out forwards;
-  animation-delay: 0.15s;
-}
-
-/* Scroll trigger using IntersectionObserver */
-.hidden {
-  opacity: 0;
-}
-
-.visible {
+.new-swiper-pagination .swiper-pagination-bullet-active {
   opacity: 1;
 }
 
-/* Optional delay customization */
-.animate-fade-up:nth-child(2) {
-  animation-delay: 0.4s;
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .wadhwani-row {
+    flex-direction: column;
+    text-align: center;
+  }
+  .wadhwani-box h2 {
+    font-size: 1.5em;
+  }
+  .wadhwani-title {
+    font-size: 2em;
+    margin-bottom: 20px;
+  }
 }

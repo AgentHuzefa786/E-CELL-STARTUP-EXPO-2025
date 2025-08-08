@@ -438,11 +438,22 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-// document.querySelectorAll('.hexagon').forEach(hex => {
-//     hex.addEventListener('click', () => {
-//         const url = hex.getAttribute('data-url');
-//         if (url) {
-//             window.open(url, '_blank');
-//         }
-//     });
-// });
+const newSwiper = new Swiper('.new-swiper', {
+    loop: true,
+    grabCursor: true,
+    slidesPerView: 1,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: '.new-swiper-button-next',
+      prevEl: '.new-swiper-button-prev',
+    },
+    pagination: {
+      el: '.new-swiper-pagination',
+      clickable: true,
+    },
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    speed: 800,
+  });
