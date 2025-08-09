@@ -43,40 +43,7 @@ function speakerPartnerSection() {
       scrub: 2,
     },
   });
-
-  gsap.from(".speakerCard", {
-    y: 50,
-    opacity: 0,
-    stagger: 0.2,
-    scrollTrigger: {
-      trigger: "#speakerSection",
-      start: "top 65%",
-      end: "bottom 10%",
-      scrub: 3,
-    },
-  });
-
-  gsap.from(".partners h1", {
-    y: 50,
-    opacity: 0,
-    scrollTrigger: {
-      trigger: ".partners",
-      start: "top 95%",
-      end: "top 65%",
-      scrub: 2,
-    },
-  });
-
-  gsap.from("#moving-div", {
-    y: 50,
-    opacity: 0,
-    scrollTrigger: {
-      trigger: ".partners",
-      start: "top 80%",
-      end: "top 0%",
-      scrub: 3,
-    },
-  });
+  
 }
 speakerPartnerSection();
 
