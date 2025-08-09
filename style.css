@@ -119,18 +119,11 @@ nav {
   align-items: center;
   justify-content: space-between;
 
-  background-color: rgba(
-    0,
-    0,
-    0,
-    0.7
-  ); 
+  background-color: rgba(0, 0, 0, 0.7);
   padding: 18px 2%;
   transition: all 0.5s ease;
   backdrop-filter: none;
-  
 }
-
 
 .logo {
   display: flex;
@@ -942,7 +935,7 @@ nav {
 /* Highlights Section */
 .highlightsSection {
   padding: 80px 5%;
-  
+
   margin: 0 auto;
   background: linear-gradient(to right, #1a0d00, #331a00);
   position: relative;
@@ -1045,7 +1038,6 @@ h2::after {
   animation-delay: 0.7s;
 }
 
-
 /* Keyframe for fade in and slide up animation */
 @keyframes fadeInSlideUp {
   to {
@@ -1053,8 +1045,6 @@ h2::after {
     transform: translateY(0);
   }
 }
-
-
 
 /* Responsive Adjustments */
 @media (min-width: 768px) {
@@ -1155,7 +1145,7 @@ h2::after {
   border: 1px solid rgba(255, 255, 255, 0.08);
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25), 0 0 15px rgba(0, 136, 255, 0.1);
   backdrop-filter: blur(10px);
-  
+
   color: #fff;
 }
 
@@ -1258,7 +1248,6 @@ h2::after {
 
 /*------------------------------------------------------------------------------------------------------------------------*/
 /*------------------------------------------------- Speakers ------------------------------------------------------------*/
-
 
 #speakerSection {
   background: linear-gradient(to right, #1a0d00, #331a00);
@@ -1431,41 +1420,41 @@ h2::after {
     flex-wrap: wrap;
     justify-content: center;
   }
-  
+
   .tab-button {
     font-size: 0.9rem;
     padding: 8px 16px;
     margin: 5px;
   }
-  
+
   .speakerContainer {
     padding: 10px;
     gap: 20px; /* Smaller gap between cards */
   }
-  
+
   .flip-card {
     width: 90vw; /* Use viewport width for better scaling on mobile */
     max-width: 300px; /* Limit max width to prevent them from becoming too large on tablets */
     height: 350px; /* Adjusted height for mobile, can be tweaked further */
   }
-  
+
   .flip-card-front img {
     width: 120px;
     height: 120px;
   }
-  
+
   .flip-card-front h2 {
     font-size: 1.2em;
   }
-  
+
   .flip-card-front h3 {
     font-size: 0.9em;
   }
-  
+
   .flip-card-back h2 {
     font-size: 1.2em;
   }
-  
+
   .flip-card-back h3 {
     font-size: 0.8em;
   }
@@ -1500,8 +1489,6 @@ h2::after {
   }
 }
 
-
-
 /*------------------------------------------------------------------------------------------------------------------------*/
 /*------------------------------------------------- Investors ----------------------------------------------------*/
 
@@ -1530,8 +1517,8 @@ h2::after {
 
 /* Swiper slides */
 
-.swiper-wrapper .swiper-slide{
-  width:400px;
+.swiper-wrapper .swiper-slide {
+  width: 400px;
   display: block;
   padding: 18px;
   border-radius: 12px;
@@ -1542,7 +1529,6 @@ h2::after {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25), 0 0 15px rgba(0, 136, 255, 0.1);
   backdrop-filter: blur(10px);
   transition: all 0.4s ease-in-out;
-
 }
 
 .swiper-slide:hover {
@@ -1552,19 +1538,18 @@ h2::after {
 }
 
 /* Image style */
-.swiper-wrapper .swiper-slide .investor-image{
+.swiper-wrapper .swiper-slide .investor-image {
   margin: 0 auto;
 }
 
-.swiper-wrapper .swiper-slide .investor-image img{
+.swiper-wrapper .swiper-slide .investor-image img {
   width: 100%;
   height: 100%;
-  
+
   aspect-ratio: 16/9;
   border-radius: 10px;
   object-fit: cover;
 }
-
 
 /* Info box */
 .investor-info {
@@ -1629,7 +1614,6 @@ h2::after {
   box-shadow: 0 0 15px #ffcc00;
 }
 
-
 /* Swiper pagination */
 .swiper-pagination-bullet {
   width: 5px;
@@ -1689,7 +1673,7 @@ h2::after {
   background: #000;
   padding: 20px;
   border-radius: 16px;
-  box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
   text-decoration: none;
   color: inherit;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -1697,7 +1681,7 @@ h2::after {
 
 .sponsor-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(0,0,0,0.2);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
 }
 
 .sponsor-card img {
@@ -1822,14 +1806,12 @@ h2::after {
 
   #videoSection video {
     width: 100%;
-  height: 100%;
+    height: 100%;
     object-fit: cover;
   }
 
   /* Center overlay stays in place */
-  
 }
-  
 
 /*----------------------------------- FAQ Section ----------------------------------*/
 #FAQ {
@@ -2421,7 +2403,6 @@ footer > p {
 
 /* Wadhwani Foundation */
 
-
 /* Section styling */
 .Wadhwani {
   padding: 60px 10px;
@@ -2454,7 +2435,6 @@ footer > p {
   justify-content: center;
 }
 
-
 .imagew-box {
   width: 100%;
   flex: 1 1 400px;
@@ -2473,9 +2453,8 @@ footer > p {
   margin: 0 auto;
 }
 
-
 .wadhwani-box {
-  flex: 1 ;
+  flex: 1;
 }
 .wadhwani-box h2 {
   font-size: 1.8em;
@@ -2489,7 +2468,7 @@ footer > p {
 .new-swiper-nav-buttons {
   display: flex;
   justify-content: space-between;
-  
+
   margin-top: 40px;
 }
 
@@ -2507,7 +2486,6 @@ footer > p {
   justify-content: center;
   box-shadow: 0 0 10px rgba(255, 215, 0, 0.6);
   transition: all 0.3s ease;
-  
 }
 
 /* Hover effect */

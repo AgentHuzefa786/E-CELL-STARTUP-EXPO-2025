@@ -30,41 +30,6 @@ function heroAnimation() {
 }
 heroAnimation();
 
-// --- Offer Section Animation ---
-// function offerAnim() {
-//   gsap.from(".fheading", {
-//     opacity: 0,
-//     duration: 0.4,
-//     y: 100,
-//     scrollTrigger: {
-//       trigger: ".fheading",
-//       scrub: 2,
-//     },
-//   });
-
-//   gsap.from(".student-cards-container", {
-//     opacity: 0,
-//     y: 100,
-//     scrollTrigger: {
-//       trigger: ".fheading",
-//       scrub: 2,
-//       start: "top 20%",
-//       end: "top 0%",
-//     },
-//   });
-
-//   gsap.from(".fsub-heading", {
-//     opacity: 0,
-//     duration: 0.4,
-//     y: 100,
-//     scrollTrigger: {
-//       trigger: ".fsub-heading",
-//       scrub: 2,
-//     },
-//   });
-// }
-// offerAnim();
-
 // --- Speaker & Partner Section ---
 function speakerPartnerSection() {
   gsap.from("#speakerSection h1", {
@@ -126,7 +91,7 @@ const swiper = new Swiper(".mySwiper", {
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
-    dynamicBullets : true
+    dynamicBullets: true,
   },
   breakpoints: {
     0: {
@@ -137,8 +102,8 @@ const swiper = new Swiper(".mySwiper", {
     },
     1024: {
       slidesPerView: 4,
-    }
-  }
+    },
+  },
 });
 
 // --- Video Animation ---
@@ -424,13 +389,15 @@ function toggleDay(dayId) {
   allButtons.forEach((btn) => btn.classList.remove("active"));
   allContents.forEach((content) => content.classList.remove("active"));
 
-  document.querySelector(`.tab-button[data-day="${dayId}"]`).classList.add("active");
+  document
+    .querySelector(`.tab-button[data-day="${dayId}"]`)
+    .classList.add("active");
   document.getElementById(dayId).classList.add("active");
 }
 
 document.addEventListener("DOMContentLoaded", () => {
   const tabButtons = document.querySelectorAll(".tab-button");
-  tabButtons.forEach(button => {
+  tabButtons.forEach((button) => {
     button.addEventListener("click", () => {
       const dayId = button.getAttribute("data-day");
       toggleDay(dayId);
@@ -438,22 +405,22 @@ document.addEventListener("DOMContentLoaded", () => {
   });
 });
 
-const newSwiper = new Swiper('.new-swiper', {
-    loop: true,
-    grabCursor: true,
-    slidesPerView: 1,
-    spaceBetween: 30,
-    navigation: {
-      nextEl: '.new-swiper-button-next',
-      prevEl: '.new-swiper-button-prev',
-    },
-    pagination: {
-      el: '.new-swiper-pagination',
-      clickable: true,
-    },
-    autoplay: {
-      delay: 4000,
-      disableOnInteraction: false,
-    },
-    speed: 800,
-  });
+const newSwiper = new Swiper(".new-swiper", {
+  loop: true,
+  grabCursor: true,
+  slidesPerView: 1,
+  spaceBetween: 30,
+  navigation: {
+    nextEl: ".new-swiper-button-next",
+    prevEl: ".new-swiper-button-prev",
+  },
+  pagination: {
+    el: ".new-swiper-pagination",
+    clickable: true,
+  },
+  autoplay: {
+    delay: 4000,
+    disableOnInteraction: false,
+  },
+  speed: 800,
+});
